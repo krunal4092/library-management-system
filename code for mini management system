@@ -1,7 +1,9 @@
 class library:
   def __init__(self):
+    i=1
     self.noofbooks=0
-    self.books=[1]
+    self.books=[i]
+    i=i+1
 
   def updatelib(self,book):
     self.noofbooks=len(self.books)
