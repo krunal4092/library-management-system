@@ -1,0 +1,17 @@
+class library:
+  def __init__(self):
+    self.noofbooks=0
+    self.books=[1]
+
+  def updatelib(self,book):
+    self.noofbooks=len(self.books)
+    self.books.append(book)
+
+  def show(self):
+    print(f"total books in library are {self.noofbooks} and the books are")
+    for book in self.books:
+      print(book)
+l=library()
+l.updatelib("a million dollar startup")
+l.updatelib("harry potter")
+l.show()
